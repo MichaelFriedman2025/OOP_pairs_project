@@ -1,17 +1,17 @@
 import json
 
-class FileHandling:
+class FileHandler:
 
     @staticmethod
-    def load_json():
-        with open("books.json" , "r", encoding="utf-8") as file:
+    def load_json(name_of_file):
+        with open(name_of_file , "r", encoding="utf-8") as file:
             try:
                 return json.load(file)
             except json.JSONDecodeError:
-                return []
+                return {name_of_file[:5]}
 
     @staticmethod
-    def save_json(data):
-        with open("books.json" ,"w",encoding="utf-8") as file:
-            json.dump(data,file,indent=4,ensure_ascii=False)
+    def dump_json(name_of_file,data):
+        with open(name_of_file ,"w",encoding="utf-8") as file:
+            json.dump(data,file,indent = 4,ensure_ascii = False)
 
