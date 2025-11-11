@@ -1,0 +1,10 @@
+{
+    "books": [
+        {
+            "isbn": "2",
+            "title": "red",
+            "author": "dani",
+            "is_available": true
+        }
+    ]
+}

@@ -6,5 +6,9 @@ class Book:
         self.is_available = True
 
 
+    def cheng_to_dict(self):
+        return {"isbn":self.isbn,"title":self.title,"author":self.author,"is_available":self.is_available}
+
     def __str__(self):
         return f"title: {self.title}, author: {self.author} ,isbn: {self.isbn}"
+

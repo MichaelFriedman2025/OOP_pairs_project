@@ -18,12 +18,12 @@ while True:
              title_book = input("enter title of book")
              author_book = input("enter author of book")
              isbn_book = input("enter isbn of book")
-             book = Book(title_book, author_book, isbn_book)
+             book = Book(title_book, author_book,isbn_book)
              lib.add_book(book)
          case "2":
              name_user = input("enter name of user")
              id_user = input("enter id of user")
-             user = User(name_user, id_user)
+             user = User(name_user,id_user)
              lib.add_user(user)
          case "3":
              user_id = input("enter user_id:")
@@ -36,11 +36,11 @@ while True:
              lib.return_book(user_id, book_isdn)
 
          case "5":
-             lib.list_available_books()
+             print(lib.list_available_books())
 
          case "6":
              title_book = input("enter title of book")
-             lib.search_book(title_book)
+             print(lib.search_book(title_book))
 
          case "7":
              break
