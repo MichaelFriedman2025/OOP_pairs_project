@@ -5,6 +5,12 @@
             "title": "red",
             "author": "dani",
             "is_available": true
+        },
+        {
+            "isbn": "4",
+            "title": "blue",
+            "author": "miki",
+            "is_available": false
         }
     ]
 }

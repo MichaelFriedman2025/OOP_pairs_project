@@ -3,7 +3,14 @@
         {
             "name": "dani",
             "id": "1",
-            "borrowed_books": []
+            "borrowed_books": [
+                {
+                    "isbn": "4",
+                    "title": "blue",
+                    "author": "miki",
+                    "is_available": false
+                }
+            ]
         }
     ]
 }
