@@ -1,9 +1,8 @@
 class User:
-    __id = 0
-    def __init__(self, name):
+    def __init__(self, name,id):
         self.name = name
-        self.id = User.__id
+        self.id = id
         self.borrowed_books = []
 
     def cheng_to_dict(self):
-        return {f"{self.id}":{"name":self.name,"id":self.id}}
+        return {"name":self.name,"id":self.id,"borrowed_books":[]}
