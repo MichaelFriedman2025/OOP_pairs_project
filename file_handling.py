@@ -8,7 +8,7 @@ class FileHandler:
             try:
                 return json.load(file)
             except json.JSONDecodeError:
-                return {name_of_file[:5]}
+                return {name_of_file[:5]:{}}
 
     @staticmethod
     def dump_json(name_of_file,data):

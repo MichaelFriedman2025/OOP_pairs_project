@@ -9,7 +9,7 @@ class Book:
 
 
     def cheng_to_dict(self):
-        return {f"{self.isbn}":{"title":self.title,"author":self.author}}
+        return {f"{self.isbn}":{"title":self.title,"author":self.author,"is_available":self.is_available}}
 
     def __str__(self):
         return f"title: {self.title}, author: {self.author} ,isbn: {self.isbn}"

@@ -33,7 +33,7 @@ class Library:
 
     def list_available_books(self):
         available_books = []
-        for book in self.list_books["books"].value():
+        for book in self.list_books["books"].values():
             if book.is_available:
                 available_books.append(book)
         return available_books
